@@ -24,4 +24,12 @@ public class ColectieGreutati {
 			System.out.println(greutati[i].toString());
 		}
 	}
+	
+	public double medie() {
+		int greutate = 0;
+		for(int i = 0; i < nrMaxGreutati; i++) {
+			greutate += greutati[i].capacitate();
+		}
+		return (double) greutate/nrMaxGreutati; 
+	}
 }

@@ -5,7 +5,7 @@ public class MainColectie {
 	public static void main(String[] args) {
 		ColectieGreutati colectie = new ColectieGreutati(10);
 		
-		Greutate g = new GreutateSimpla(10);
+		Greutate g = new GreutateSimpla(16);
 		Greutate g2 = new GreutateSimpla(10);
 		colectie.adauga(g);
 		colectie.adauga(g2);
@@ -23,6 +23,7 @@ public class MainColectie {
 		colectie.adauga(g4);
 		
 		colectie.afisareGreutati();
+		System.out.println(colectie.medie());
 	}
 
 }
